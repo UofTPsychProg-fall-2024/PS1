@@ -34,18 +34,11 @@ rt = [400, 450, 500, 440, -1, 410, 570]
 
 # the -1 indicates missing data. Your job is to remove it
 # use the index method to find the missing value 
-missing_rt =
+missing_rt = ...
 
 # and then use missing_rt to remove the trial from rt
-clean_rt =
-
-
-# now you have data with more than one missing value
-rt_trouble = [400, 450, 500, 440, -1, 410, 570, -1, 400]
-
-# try the same procedure. Does it work? 
-# use a comment to explain why or why not below your code
-
+clean_rt = rt
+del(...)
 
 
 # now write an if statement that you can use to remove the first missing value 
@@ -65,6 +58,6 @@ data = [rt_new, trial_num, accuracy]
 # where index 0 in each sublist refers to data from the first trial, etc.
 # using the same approaches  as above, find the trial with missing rt data
 # and remove it from all sublists in data 
-# be sure to only work with the master data list, to practice indexing 
+# be sure to only work with the master "data" list, to practice indexing 
 # lists of lists
 
