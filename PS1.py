@@ -30,34 +30,39 @@ coder3 =
 #%%  Part 2  find and remove the invalid response______________________________
 
 # imagine these are a list of reaction times that you recorded 
-rt = [400, 450, 500, 440, -1, 410, 570]
+rt = [400, 450, 500, 440, -1, 400, 570]
+
+# use slicing to create two new variables, one that contains rts from even
+# trials and the other odd trials
+
+event_rt =
+odd_rt =
 
 # the -1 indicates missing data. Your job is to remove it
-# use the index method to find the missing value 
+# first use the "in" operator to check if there is missing data in rt
+# add a comment that notes what data type is returned when you use the "in" operator
+
+
+# lists have a nifty method called "index" which returns the index 
+# of a value within the list. 
+# use this method to find the index that contains missing data in rt
+# hint, this method is mentioned on a lecture slide but you may need to 
+# use google/stack exchange to work out how to use it
+
 missing_rt = ...
 
 # and then use missing_rt to remove the trial from rt
 clean_rt = rt
 del(...)
 
+# how would this approach work if you had multiple missing values in RT? 
+# use indexing to replace the value 450 with -1
+rt = [400, 450, 500, 440, -1, 400, 570]
+rt...
 
-# now write an if statement that you can use to remove the first missing value 
-# only when there is a missing value (-1) in a list 
-# this statement should always generate a clean_rt list; if there's no missing
-# data clean_rt is set to the original rt list.   
+# now rt should hve two missing values
+# try using the index method and the del function to remove them
 
 
-
-# for the last section, you will work with a list of lists:
-rt_new = [400, 450, 500, 440, -1, 410, 570]
-trial_num = [1,2,3,4,5,6,7]
-accuracy = [0, 1, 0, 0, 1, 0]
-data = [rt_new, trial_num, accuracy]
-
-# this master list combines information about each trial in an experiment,
-# where index 0 in each sublist refers to data from the first trial, etc.
-# using the same approaches  as above, find the trial with missing rt data
-# and remove it from all sublists in data 
-# be sure to only work with the master "data" list, to practice indexing 
-# lists of lists
+# what happened? What would you have to do to ensure that there are no missing values left? 
 
